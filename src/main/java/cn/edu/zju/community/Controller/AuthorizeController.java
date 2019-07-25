@@ -1,5 +1,7 @@
 package cn.edu.zju.community.Controller;
 
+import cn.edu.zju.community.Mapper.UserMapper;
+import cn.edu.zju.community.Model.User;
 import cn.edu.zju.community.Provider.GithubProvider;
 import cn.edu.zju.community.dto.AccessTokenDTO;
 import cn.edu.zju.community.dto.GithubUser;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.UUID;
 
 /**
  * Created by HChien Ying on 2019/7/24
@@ -30,6 +33,10 @@ public class AuthorizeController {
     @Value ("${github.redirect.uri}")
     private String redirectUri;
 
+    @Autowired
+    private UserMapper userMapper;
+
+
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code") String code,
                            @RequestParam(name = "state") String state,
@@ -41,12 +48,19 @@ public class AuthorizeController {
         accessTokenDTO.setRedirect_uri (redirectUri);
         accessTokenDTO.setState (state);
         String accessToken = githubProvider.getAccessToken (accessTokenDTO);
-        GithubUser user = githubProvider.githubUser (accessToken);
+        GithubUser githubUser = githubProvider.getUser (accessToken);
 //        System.out.println (githubUser.getName ());
 //        githubProvider.getAccessToken (accessTokenDTO);
-        if (user != null) {
+        if (githubUser != null) {
+            User user = new User ();
+            user.setToken (UUID.randomUUID ().toString ());
+            user.setName (githubUser.getName ());
+            user.setAccountId (String.valueOf (githubUser.getId ()));
+            user.setGmtCreate (System.currentTimeMillis ());
+            user.setGmtModified (user.getGmtModified ());
+            userMapper.insert (user);
             //登陆成功，写cookie和session
-            request.getSession ().setAttribute ("user", user);
+            request.getSession ().setAttribute ("user", githubUser);
             return "redirect:/";
         }else {
             //登陆失败，重新登陆
