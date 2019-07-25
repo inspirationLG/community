@@ -12,7 +12,7 @@
 ##工具<br>
 [Git](https://git-scm.com/download)<br>
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)<br>
-
+[Flyway](https://flywaydb.org/getstarted/firststeps/maven)<br>
 
 ##脚本<br>
 '''
@@ -25,4 +25,7 @@ CREATE TABLE USER
     GMT_CREATE BIGINT,
     GMT_MODIFIED BIGINT
 );
+'''
+'''bash
+mvn flyway:migrate
 '''
