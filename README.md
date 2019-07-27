@@ -13,7 +13,7 @@
 [Git](https://git-scm.com/download)<br>
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)<br>
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)<br>
-
+[lombok](https://projectlombok.org/)  
 
 ##脚本<br>
 '''
