@@ -14,18 +14,19 @@
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)<br>
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)<br>
 
+
 ##脚本<br>
 '''
-CREATE TABLE USER
-(
-    ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
-    ACCOUNT_ID VARCHAR(100),
-    NAME VARCHAR(50),
-    TOKEN VARCHAR(36),
-    GMT_CREATE BIGINT,
-    GMT_MODIFIED BIGINT
+CREATE TABLE USER  
+(  
+    ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,  
+    ACCOUNT_ID VARCHAR(100),  
+    NAME VARCHAR(50),  
+    TOKEN VARCHAR(36),  
+    GMT_CREATE BIGINT,  
+    GMT_MODIFIED BIGINT  
 );
-'''
-'''bash
-mvn flyway:migrate
+'''  
+'''bash  
+mvn flyway:migrate  
 '''
