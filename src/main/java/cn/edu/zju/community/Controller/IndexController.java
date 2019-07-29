@@ -1,8 +1,8 @@
 package cn.edu.zju.community.Controller;
 
 import cn.edu.zju.community.Mapper.UserMapper;
-import cn.edu.zju.community.Model.Question;
 import cn.edu.zju.community.Model.User;
+import cn.edu.zju.community.dto.QuestionDTO;
 import cn.edu.zju.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,7 +42,7 @@ public class IndexController {
                 }
             }
 
-        List<Question> questionList = questionMapper.list ();
+        List<QuestionDTO> questionList = questionService.list ();
         model.addAttribute ("question", questionList);
         return "index";
 
