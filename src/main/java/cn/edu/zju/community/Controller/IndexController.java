@@ -41,9 +41,11 @@ public class IndexController {
                     break;
                 }
             }
-
         List<QuestionDTO> questionList = questionService.list ();
-        model.addAttribute ("question", questionList);
+//        for (QuestionDTO questionDTO : questionList) {
+//            questionDTO.setDescription ("changed");
+//        }
+        model.addAttribute ("questions", questionList);
         return "index";
 
     }
