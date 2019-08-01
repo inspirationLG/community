@@ -79,8 +79,6 @@
                             <span aria-hidden="true">&lt;</span>
                         </a>
                     </li>
-<!--                    <li th:each="page : ${pagination.pages}" th:class="${pagination.page == page}? 'active' : ''">-->
-<!--                        <a th:href="@{/(page=${page})}" th:text="${page}">-->
                     <li th:each="page:${pagination.pages}" th:class="${pagination.page==page}?'active':''">
                         <a th:href="@{/(page=${page})}" th:text="${page}">
                         </a>
