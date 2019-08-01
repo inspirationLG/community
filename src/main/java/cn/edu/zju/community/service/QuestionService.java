@@ -49,8 +49,6 @@ public class QuestionService {
             questionDTOList.add (questionDTO);
         }
         paginationDTO.setQuestions (questionDTOList);
-        //拿到分页数
-
         return paginationDTO;
     }
 }

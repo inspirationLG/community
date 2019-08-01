@@ -28,12 +28,10 @@ public class PaginationDTO {
         if (page < 1) {
             page = 1;
         }
-
         if (page > totalPage) {
             page = totalPage;
         }
         this.page = page;
-
         pages.add (page);
         for (int i = 1; i <= 3; i++) {
             if (page - i > 0) {
@@ -54,9 +52,9 @@ public class PaginationDTO {
         }
         //是否展示下一页
         if (page == totalPage) {
-            showEndPage = false;
+            showNext = false;
         } else {
-            showEndPage = true;
+            showNext = true;
         }
         //是否展示第一页
         if (pages.contains (1)) {
