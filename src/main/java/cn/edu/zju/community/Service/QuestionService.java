@@ -54,7 +54,7 @@ public class QuestionService {
 
     public PaginationDTO list(Integer userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO ();
-        Integer totalCount = questionMapper.count ();
+        Integer totalCount = questionMapper.countByuserId (userId);
         paginationDTO.setPagination (totalCount, page, size);
         if (page < 1) {
             page = 1;
