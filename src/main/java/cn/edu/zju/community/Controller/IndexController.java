@@ -2,8 +2,8 @@ package cn.edu.zju.community.Controller;
 
 import cn.edu.zju.community.Mapper.UserMapper;
 import cn.edu.zju.community.Model.User;
-import cn.edu.zju.community.dto.PaginationDTO;
-import cn.edu.zju.community.service.QuestionService;
+import cn.edu.zju.community.DTO.PaginationDTO;
+import cn.edu.zju.community.Service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

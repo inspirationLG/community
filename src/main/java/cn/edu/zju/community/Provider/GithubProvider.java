@@ -1,7 +1,7 @@
 package cn.edu.zju.community.Provider;
 
-import cn.edu.zju.community.dto.AccessTokenDTO;
-import cn.edu.zju.community.dto.GithubUser;
+import cn.edu.zju.community.DTO.AccessTokenDTO;
+import cn.edu.zju.community.DTO.GithubUser;
 import com.alibaba.fastjson.JSON;
 import okhttp3.*;
 import org.springframework.stereotype.Component;

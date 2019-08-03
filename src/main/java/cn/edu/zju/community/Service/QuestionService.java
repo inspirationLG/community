@@ -1,11 +1,11 @@
-package cn.edu.zju.community.service;
+package cn.edu.zju.community.Service;
 
 import cn.edu.zju.community.Mapper.QuestionMapper;
 import cn.edu.zju.community.Mapper.UserMapper;
 import cn.edu.zju.community.Model.Question;
 import cn.edu.zju.community.Model.User;
-import cn.edu.zju.community.dto.PaginationDTO;
-import cn.edu.zju.community.dto.QuestionDTO;
+import cn.edu.zju.community.DTO.PaginationDTO;
+import cn.edu.zju.community.DTO.QuestionDTO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
