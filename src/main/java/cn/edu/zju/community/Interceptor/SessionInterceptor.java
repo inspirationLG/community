@@ -1,4 +1,4 @@
-package cn.edu.zju.community.interceptor;
+package cn.edu.zju.community.Interceptor;
 
 import cn.edu.zju.community.Mapper.UserMapper;
 import cn.edu.zju.community.Model.User;
