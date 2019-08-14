@@ -50,7 +50,6 @@ public class AuthorizeController {
         accessTokenDTO.setState(state);
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
         GithubUser githubUser = githubProvider.getUser(accessToken);
-//        System.out.println (githubUser.getName ());
         if (githubUser != null && githubUser.getId() != null) {
             User user = new User();
             String token = UUID.randomUUID().toString();
@@ -67,7 +66,7 @@ public class AuthorizeController {
             //登陆失败，重新登陆
             return "redirect:/";
         }
-//        githubProvider.getAccessToken (accessTokenDTO);
+        githubProvider.getAccessToken (accessTokenDTO);
     }
 
     @GetMapping("/logout")
