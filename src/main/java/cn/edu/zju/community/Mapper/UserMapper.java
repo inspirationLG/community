@@ -21,6 +21,7 @@ public interface UserMapper {
     User findByAccountId(@Param ("accountId") String accountId);
 
     @Update("update user set name = #{name}, token = #{token}, gmt_modified = #{gmtModified}, avatar_url = #{avatarUrl} where id = #{id} ")
+    void update(User user);@Update("update user set name = #{name}, token = #{token}, gmt_modified = #{gmtModified}, avatar_url = #{avatarUrl} where id = #{id} ")
     void update(User user);
 
 }
