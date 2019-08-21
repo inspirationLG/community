@@ -1,7 +1,7 @@
-package cn.edu.zju.community.Controller;
+package cn.edu.zju.community.controller;
 
-import cn.edu.zju.community.DTO.QuestionDTO;
-import cn.edu.zju.community.Service.QuestionService;
+import cn.edu.zju.community.dto.QuestionDTO;
+import cn.edu.zju.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

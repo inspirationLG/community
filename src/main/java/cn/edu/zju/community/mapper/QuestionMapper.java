@@ -1,6 +1,6 @@
-package cn.edu.zju.community.Mapper;
+package cn.edu.zju.community.mapper;
 
-import cn.edu.zju.community.Model.Question;
+import cn.edu.zju.community.model.Question;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

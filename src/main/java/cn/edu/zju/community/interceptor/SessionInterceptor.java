@@ -1,7 +1,7 @@
-package cn.edu.zju.community.Interceptor;
+package cn.edu.zju.community.interceptor;
 
-import cn.edu.zju.community.Mapper.UserMapper;
-import cn.edu.zju.community.Model.User;
+import cn.edu.zju.community.mapper.UserMapper;
+import cn.edu.zju.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;

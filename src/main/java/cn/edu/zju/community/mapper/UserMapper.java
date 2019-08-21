@@ -1,6 +1,6 @@
-package cn.edu.zju.community.Mapper;
+package cn.edu.zju.community.mapper;
 
-import cn.edu.zju.community.Model.User;
+import cn.edu.zju.community.model.User;
 import org.apache.ibatis.annotations.*;
 
 /**

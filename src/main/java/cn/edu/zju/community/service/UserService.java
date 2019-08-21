@@ -1,7 +1,7 @@
-package cn.edu.zju.community.Service;
+package cn.edu.zju.community.service;
 
-import cn.edu.zju.community.Mapper.UserMapper;
-import cn.edu.zju.community.Model.User;
+import cn.edu.zju.community.mapper.UserMapper;
+import cn.edu.zju.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

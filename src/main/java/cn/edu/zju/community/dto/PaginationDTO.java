@@ -1,4 +1,4 @@
-package cn.edu.zju.community.DTO;
+package cn.edu.zju.community.dto;
 
 import lombok.Data;
 

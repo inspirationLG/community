@@ -19,7 +19,7 @@
 [lombok](https://projectlombok.org/)  
 
 ##脚本  
-'''
+```
 CREATE TABLE USER  
 (  
     ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,  
@@ -29,4 +29,7 @@ CREATE TABLE USER
     GMT_CREATE BIGINT,  
     GMT_MODIFIED BIGINT  
 );
-'''  
+```
+```
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+```

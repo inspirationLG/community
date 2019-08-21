@@ -1,4 +1,4 @@
-package cn.edu.zju.community.Model;
+package cn.edu.zju.community.model;
 
 import lombok.Data;
 

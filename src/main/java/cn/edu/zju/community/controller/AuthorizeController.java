@@ -1,10 +1,10 @@
-package cn.edu.zju.community.Controller;
+package cn.edu.zju.community.controller;
 
-import cn.edu.zju.community.DTO.AccessTokenDTO;
-import cn.edu.zju.community.DTO.GithubUser;
-import cn.edu.zju.community.Model.User;
-import cn.edu.zju.community.Provider.GithubProvider;
-import cn.edu.zju.community.Service.UserService;
+import cn.edu.zju.community.dto.AccessTokenDTO;
+import cn.edu.zju.community.dto.GithubUser;
+import cn.edu.zju.community.model.User;
+import cn.edu.zju.community.provider.GithubProvider;
+import cn.edu.zju.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

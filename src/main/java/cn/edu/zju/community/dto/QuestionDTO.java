@@ -1,6 +1,6 @@
-package cn.edu.zju.community.DTO;
+package cn.edu.zju.community.dto;
 
-import cn.edu.zju.community.Model.User;
+import cn.edu.zju.community.model.User;
 import lombok.Data;
 
 /**
