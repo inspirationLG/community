@@ -6,7 +6,8 @@ import org.apache.ibatis.annotations.*;
 import java.util.List;
 
 /**
- * Created by HChien Ying on 2019/7/26
+ * Created by H2222222222git add .
+ * gChien Ying on 2019/7/26
  */
 @Mapper
 public interface QuestionMapper {
